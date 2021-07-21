@@ -1,6 +1,6 @@
 FROM node:14.15.4
 
-LABEL author='Bui Minh Chien, email: chien.bui@amela.vn'
+LABEL author='Ngo Tuan Anh, email: anhnt.vnist@gmail.com'
 
 WORKDIR /usr/src/app
 
