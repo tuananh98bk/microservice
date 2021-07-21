@@ -5,6 +5,9 @@ import { getKeyCacheLanguage, reformatFileLanguage } from '$helpers/utils';
 import config from '$config';
 import { getRepository } from 'typeorm';
 import { CommonStatus } from '$enums';
+import Voice from '$entities/Voice';
+import { log } from 'util';
+import { fileUpload } from 'express-fileupload';
 
 export async function getLanguage(environment: string) {
   const languageKeyRepository = getRepository(LanguageKey);
@@ -19,3 +22,19 @@ export async function getLanguage(environment: string) {
   const data = await queryBuilder.getRawMany();
   return reformatFileLanguage(data, { environment });
 }
+
+// export async function upload(fileData: any) {
+//   var newFile = new Voice();
+//   newFile.name = fileData.name;
+//   newFile.data = fileData.data.toString('base64');
+//   newFile.mimeType = fileData.mimetype;
+
+//   try {
+//     const repo = getRepository(Voice);
+//     const result_File = await repo.save(newFile);
+//     return 'success';
+//   } catch (error) {
+//     log(error);
+//     return 'ERROR';
+//   }
+// }
