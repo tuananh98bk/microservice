@@ -37,7 +37,7 @@ SERVER_PORT=3000
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_USER=root
-DB_PASS=Amela@123a@
+DB_PASS=Anh@123a@
 DB_NAME=baseapi
 
 # Auth keys
@@ -204,7 +204,7 @@ https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-
 
 - sudo apt-get update
 - sudo apt-get install python-certbot-nginx
-- sudo certbot --nginx -d dotachan-api.test.amela.vn
+- sudo certbot --nginx -d domain
 
 Auto renew ssl
 
@@ -214,8 +214,8 @@ Auto renew ssl
 
 - sudo apt update
 - sudo apt install mysql-server
-  Setup mysql and create new username: dotachan, password: Amela@123a@
-  CREATE USER 'dotachan'@'localhost' IDENTIFIED WITH mysql*native_password BY 'Amela@123a@';
+  Setup mysql and create new username: dotachan, password: Anh@123a@
+  CREATE USER 'dotachan'@'localhost' IDENTIFIED WITH mysql*native_password BY 'Anh@123a@';
   GRANT CREATE, ALTER, DROP, INSERT, UPDATE, DELETE, SELECT, REFERENCES, RELOAD on *.\_ TO 'dotachan'@'localhost' WITH GRANT OPTION;
   FLUSH PRIVILEGES;
 
