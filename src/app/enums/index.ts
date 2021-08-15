@@ -24,6 +24,7 @@ export enum ErrorCode {
   Email_Not_Exist = 17,
   Email_Or_Password_Invalid = 18,
   Password_Invalid = 19,
+  Voice_Not_Exist = 20,
 }
 
 export enum UserStatus {

@@ -8,8 +8,32 @@ import { transcriptions } from '$services/app.voice';
 
 @APP('/voices')
 export default class AuthController {
+  @Get('/')
+  async getListVoice(req: Request) {
+    const voiceId = Number(req.query.voiceId);
+    return transcriptions(voiceId);
+  }
+
   @Get('/:voiceId')
-  async language(req: Request) {
+  async getVoiceDetail(req: Request) {
+    const voiceId = Number(req.query.voiceId);
+    return transcriptions(voiceId);
+  }
+
+  @Put('/:voiceId/transcription')
+  async transcriptVoice(req: Request) {
+    const voiceId = Number(req.query.voiceId);
+    return transcriptions(voiceId);
+  }
+
+  @Put('/:voiceId/transcription')
+  async updateVoice(req: Request) {
+    const voiceId = Number(req.query.voiceId);
+    return transcriptions(voiceId);
+  }
+
+  @Post('/')
+  async createVoice(req: Request) {
     const voiceId = Number(req.query.voiceId);
     return transcriptions(voiceId);
   }

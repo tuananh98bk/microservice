@@ -4,7 +4,7 @@ import flatten from 'flat';
 import format from 'string-format';
 import _ from 'lodash';
 
-interface PagingParams {
+export interface PagingParams {
   pageIndex: number;
   pageSize: number;
   start: number;
