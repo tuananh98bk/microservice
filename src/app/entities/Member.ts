@@ -1,6 +1,6 @@
 import { MemberStatus } from '$enums';
 import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from 'typeorm';
-@Entity('member')
+@Entity('members')
 export default class Member {
   @PrimaryGeneratedColumn({ name: 'id', type: 'int', unsigned: true })
   id: number;
